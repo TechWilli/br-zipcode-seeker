@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+html {
+  min-height: 100%;
+	font-size: 16px;
+}
+
+*,
+button,
+input {
+  border: 0;
+  background: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: .6rem;
+  height: .6rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(220, 220, 220);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .35rem;
+  background-color: grey;
+  border: 2px solid rgb(220, 220, 220);
+}
+
+header {
+  background-color: #457b9d;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+}
+
+header h1 {
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 72px;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+  font-size: .85rem;
+}
+
+form input[id=zipcode] {
+  margin-right: .5rem;
+  border: 2px solid transparent;
+  width: 66.8%;
+}
+
+form input[id=zipcode]:focus {
+  border: 2px solid #457b9d;
+  box-shadow: 0 0 0 2px #d8e7f0;
+}
+
+form input[type=button] {
+  background-color: #457b9d;
+  border: 2px solid #457b9d;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: .2s;
+}
+
+form input[type=button]:hover {
+  background-color: #1d3557;
+  border: 2px solid #1d3557;
+}
+
+form input[type=text] {
+  background-color: rgb(240, 240, 240);
+  border: 2px solid transparent;
+  padding: .5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.address-wrapper {
+  margin-top: 2.5rem;
+}
+
+.address-wrapper input {
+  width: 100%;
+}
+
+.address-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.address-wrapper span {
+  text-align: center;
+  background-color: white;
+  position: relative;
+  padding: 0 5px;
+}
+
+.divider {
+  width: 100%;
+  margin-top: -9px;
+  border-top: 1px solid black;
+}
+
+.address-not-found {
+  text-align: center;
+}
+
+.address-not-found {
+  margin-top: 2.5rem;
+  text-align: center;
+  height: 243px;
+  display: none;
+  transition: .5s;
+  transform: scale(1);
+}
+
+.address-not-found span {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+.city-fu-wrapper {
+  display: flex;
+}
+
+.city-fu-wrapper div:nth-child(1) {
+  width: 100%;
+  margin-right: 10px;
+}
+
+#seek-zipcode {
+  width: 350px;
+}
